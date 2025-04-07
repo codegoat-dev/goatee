@@ -1,11 +1,20 @@
 {
   "name": "@CodeGoat-dev/goatee",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "a code-only, logic-driven web framework that lets you build static HTML websites using pure JavaScript. No templates, no magic—just structured layout through class-based elements and straightforward rendering.",
   "author": "CodeGoat-dev <codegoat@goatbot.org>",
   "type": "module",
   "license": "MIT",
   "main": "src/Goatee.js",
+  "homepage": "https://goatbot.org",
+  "private": false,
+  "keywords": [
+    "Web",
+    "Html",
+    "Javascript",
+    "Development",
+    "Framework"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodeGoat-dev/goatee.git"
