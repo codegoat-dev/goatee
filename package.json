@@ -2,7 +2,7 @@
   "name": "goatee",
   "version": "0.1.0",
   "type": "module",
-  "main": "dist/myapp.js",
+  "main": "src/Goatee.js",
   "scripts": {
     "build": "tsc",
     "start": "node myapp.js",
