@@ -16,7 +16,7 @@
   "scripts": {
     "lint:check": "eslint .",
     "lint:fix": "eslint --fix .",
-    "build": "tsc"
+    "build": "tsc",
     "dev": "tsc --watch"
   },
   "devDependencies": {
