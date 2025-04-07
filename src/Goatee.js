@@ -21,6 +21,7 @@ import { Form } from "./core/Form.js";
 import { Input } from "./core/Input.js";
 import { Textarea } from "./core/Textarea.js";
 import { Button } from "./core/Button.js";
+import { RawHtml } from './core/RawHtml.js';
 
 // Goatee class
 export class Goatee {
@@ -40,6 +41,7 @@ export class Goatee {
     this.Input = Input;
     this.Textarea = Textarea;
     this.Button = Button;
+    this.RawHtml = RawHtml;
   }
 
   // Web bundle builder
