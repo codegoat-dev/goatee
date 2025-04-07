@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Adds support for tables using the `Goatee.Table` class.
+
+## [0.1.1] - 2025-04-07
+
+### Added
+
 - Implemented code linting.
 
 ## [0.1.0] - 2025-04-07

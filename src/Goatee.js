@@ -13,6 +13,7 @@ import { Body } from "./core/Body.js";
 import { Heading } from "./core/Heading.js";
 import { Text } from "./core/Text.js";
 import { Link } from "./core/Link.js";
+import { Table } from "./core/Table.js";
 import { Form } from "./core/Form.js";
 import { Input } from "./core/Input.js";
 import { Textarea } from "./core/Textarea.js";
@@ -28,6 +29,7 @@ export class Goatee {
     this.Heading = Heading;
     this.Text = Text;
     this.Link = Link;
+    this.Table = Table;
     this.Form = Form;
     this.Input = Input;
     this.Textarea = Textarea;
