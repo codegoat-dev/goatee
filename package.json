@@ -6,6 +6,15 @@
   "type": "module",
   "license": "MIT",
   "main": "src/Goatee.js",
+  "homepage": "https://goatbot.org",
+  "private": false,
+  "keywords": [
+    "Web",
+    "Html",
+    "Javascript",
+    "Development",
+    "Framework"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodeGoat-dev/goatee.git"
