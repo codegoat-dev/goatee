@@ -1,14 +1,14 @@
-import { Element } from './Element.js';
+import { Element } from "./Element.js";
 
 export class RawHtml extends Element {
-    html;
+  html;
 
-    constructor(html) {
-        super();
-        this.html = html;
-    }
+  constructor(html) {
+    super();
+    this.html = html;
+  }
 
-    render() {
-        return this.html;
-    }
+  render() {
+    return this.html;
+  }
 }
