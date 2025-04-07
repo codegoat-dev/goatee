@@ -34,11 +34,11 @@ export default [
   {
     rules: {
       "no-unused-vars": 0,
-      "no-redeclare": 0,
+      "no-redeclare": 1,
       "no-dupe-keys": 1,
       "no-self-assign": 1,
       "no-await-in-loop": 0,
-      "no-useless-escape": 0,
+      "no-useless-escape": 1,
       "no-unexpected-multiline": 1,
       "no-mixed-spaces-and-tabs": 1,
       "no-extra-semi": 1,
