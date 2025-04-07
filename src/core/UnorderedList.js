@@ -1,7 +1,7 @@
-import { List } from './List.js';
+import { List } from "./List.js";
 
 export class UnorderedList extends List {
-    render() {
-        return `<ul>\n${this.renderItems()}\n</ul>`;
-    }
+  render() {
+    return `<ul>\n${this.renderItems()}\n</ul>`;
+  }
 }

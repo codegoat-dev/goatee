@@ -8,15 +8,15 @@ import { fileURLToPath, pathToFileURL } from "url";
 
 import { Element } from "./core/Element.js";
 import { Page } from "./core/Page.js";
-import { Script } from './core/Script.js';
+import { Script } from "./core/Script.js";
 import { Head } from "./core/Head.js";
 import { Body } from "./core/Body.js";
 import { Heading } from "./core/Heading.js";
 import { Text } from "./core/Text.js";
 import { Link } from "./core/Link.js";
 import { Table } from "./core/Table.js";
-import { UnorderedList } from './core/UnorderedList.js';
-import { OrderedList } from './core/OrderedList.js';
+import { UnorderedList } from "./core/UnorderedList.js";
+import { OrderedList } from "./core/OrderedList.js";
 import { Form } from "./core/Form.js";
 import { Input } from "./core/Input.js";
 import { Textarea } from "./core/Textarea.js";
