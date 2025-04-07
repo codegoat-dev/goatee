@@ -12,6 +12,7 @@ import { Script } from "./core/Script.js";
 import { Head } from "./core/Head.js";
 import { Body } from "./core/Body.js";
 import { Heading } from "./core/Heading.js";
+import { Separator } from "./core/Separator.js";
 import { Text } from "./core/Text.js";
 import { Link } from "./core/Link.js";
 import { Table } from "./core/Table.js";
@@ -32,6 +33,7 @@ export class Goatee {
     this.Head = Head;
     this.Body = Body;
     this.Heading = Heading;
+    this.Separator = Separator;
     this.Text = Text;
     this.Link = Link;
     this.Table = Table;

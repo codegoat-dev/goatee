@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Adds support for raw HTML using the "Goatee.RawHtml()" class.
+- Adds support for "<hr>" separators using the "Goatee.Separator()" class.
 
 ## [0.1.5] - 2025-04-07
 
