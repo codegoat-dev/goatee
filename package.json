@@ -1,0 +1,14 @@
+{
+  "name": "goatee",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/myapp.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node myapp.js",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
