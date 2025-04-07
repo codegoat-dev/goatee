@@ -15,6 +15,8 @@ import { Heading } from "./core/Heading.js";
 import { Text } from "./core/Text.js";
 import { Link } from "./core/Link.js";
 import { Table } from "./core/Table.js";
+import { UnorderedList } from './core/UnorderedList.js';
+import { OrderedList } from './core/OrderedList.js';
 import { Form } from "./core/Form.js";
 import { Input } from "./core/Input.js";
 import { Textarea } from "./core/Textarea.js";
@@ -32,6 +34,8 @@ export class Goatee {
     this.Text = Text;
     this.Link = Link;
     this.Table = Table;
+    this.UnorderedList = UnorderedList;
+    this.OrderedList = OrderedList;
     this.Form = Form;
     this.Input = Input;
     this.Textarea = Textarea;

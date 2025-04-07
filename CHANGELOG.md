@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Adds support for script using the "Goatee.Script()" class.
+- Adds support for lists using the "Goatee.OrderedList()" and "Goatee.UnorderedList()" classes.
 
 ## [0.1.2] - 2025-04-07
 
