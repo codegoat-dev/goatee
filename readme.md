@@ -9,10 +9,20 @@
 ## 🚀 Features
 
 - 📦 Generate static HTML pages using pure JavaScript
-- 🧱 Class-based components: `Page`, `Head`, `Body`, `Text`, `Link`, `Form`, `Input`, `Textarea`, `Button`, and more
+- 🧱 Class-based components: `Page`, `Head`, `Body`, `Text`, `Link`, `Form`, `Input`, `Textarea`, `Button`, `Table`, `Script`, and more
+
 - 🧑‍🦯 Accessibility-first: input elements support proper `<label for="...">` relationships
 - 🧹 Outputs clean, semantic HTML that can be dropped into any static web host
 - 🔧 No special syntax, no JSX, no runtime—just real code
+
+---
+
+## 📦 Installation
+
+To install the package, run the following command:
+
+```bash
+npm install goatee
 
 ---
 
@@ -69,3 +79,14 @@ export default new goatee.Page(head, body);
 ## More Information
 
 Additional features are planned, including enhancements to existing classes.
+
+## 🛣️ Roadmap
+
+- Add layout primitives (e.g. `VerticalStack`, `FormGroup`)
+- CLI support (`npx goatee build`)
+- Class/style injection support
+- Component composition helpers
+
+## 🤝 Contributing
+
+Pull requests and ideas welcome. This is a code-first tool made by developers, for developers.
