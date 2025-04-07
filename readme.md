@@ -22,7 +22,7 @@
 To install the package, run the following command:
 
 ```bash
-npm install goatee
+npm install @CodeGoat-dev/goatee
 
 ---
 
