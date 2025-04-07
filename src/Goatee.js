@@ -8,6 +8,7 @@ import { fileURLToPath, pathToFileURL } from "url";
 
 import { Element } from "./core/Element.js";
 import { Page } from "./core/Page.js";
+import { Script } from './core/Script.js';
 import { Head } from "./core/Head.js";
 import { Body } from "./core/Body.js";
 import { Heading } from "./core/Heading.js";
@@ -24,6 +25,7 @@ export class Goatee {
   constructor () {
     this.Element = Element;
     this.Page = Page;
+    this.Script = Script;
     this.Head = Head;
     this.Body = Body;
     this.Heading = Heading;
