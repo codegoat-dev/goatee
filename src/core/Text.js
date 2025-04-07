@@ -1,16 +1,16 @@
-import { Element } from './Element.js';
+import { Element } from "./Element.js";
 
 export class Text extends Element {
-    body;
+  body;
 
-    constructor(body) {
-        super();
-        this.body = body;
-    }
+  constructor(body) {
+    super();
+    this.body = body;
+  }
 
-    render() {
-        return `
+  render() {
+    return `
             <p>${this.body}</p>
         `.trim();
-    }
+  }
 }

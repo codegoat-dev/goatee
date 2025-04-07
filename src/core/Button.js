@@ -1,16 +1,16 @@
-import { Element } from './Element.js';
+import { Element } from "./Element.js";
 
 export class Button extends Element {
-    text;
-    type;
+  text;
+  type;
 
-    constructor(text, type = 'submit') {
-        super();
-        this.text = text;
-        this.type = type;
-    }
+  constructor(text, type = "submit") {
+    super();
+    this.text = text;
+    this.type = type;
+  }
 
-    render() {
-        return `<button type="${this.type}">${this.text}</button>`;
-    }
+  render() {
+    return `<button type="${this.type}">${this.text}</button>`;
+  }
 }

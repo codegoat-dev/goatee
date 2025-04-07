@@ -1,18 +1,18 @@
-import { Element } from './Element.js';
+import { Element } from "./Element.js";
 
 export class Link extends Element {
-    name;
-    location;
+  name;
+  location;
 
-    constructor(name, location) {
-        super();
-        this.name = name;
-        this.location = location;
-    }
+  constructor(name, location) {
+    super();
+    this.name = name;
+    this.location = location;
+  }
 
-    render() {
-        return `
+  render() {
+    return `
             <a href="${this.location}">${this.name}</a><br>
         `.trim();
-    }
+  }
 }

@@ -1,24 +1,24 @@
-import { Element } from './Element.js';
-import { Head } from './Head.js';
-import { Body } from './Body.js';
+import { Element } from "./Element.js";
+import { Head } from "./Head.js";
+import { Body } from "./Body.js";
 
 export class Page extends Element {
-    head;
-    body;
+  head;
+  body;
 
-    constructor(head, body) {
-        super();
-        this.head = head;
-        this.body = body;
-    }
+  constructor(head, body) {
+    super();
+    this.head = head;
+    this.body = body;
+  }
 
-    render() {
-        return `
+  render() {
+    return `
             <!DOCTYPE html>
             <html lang="en">
             ${this.head.render()}
             ${this.body.render()}
             </html>
         `.trim();
-    }
+  }
 }

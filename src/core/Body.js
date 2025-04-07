@@ -1,17 +1,18 @@
-import { Element } from './Element.js';
+import { Element } from "./Element.js";
 
 export class Body extends Element {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    children = [];
+  children = [];
 
-    add(child) {
-        this.children.push(child);
-    }
+  add(child) {
+    this.children.push(child);
+  }
 
-    render() {
-        return `<body>\n${this.children.map(c => c.render()).join('\n')}\n</body>`;
-    }
+  render() {
+    return `<body>\n${this.children.map(c => c.render())
+      .join("\n")}\n</body>`;
+  }
 }
