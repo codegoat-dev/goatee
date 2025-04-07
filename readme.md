@@ -28,6 +28,44 @@ const goatee = new Goatee();
 const head = new goatee.Head("Welcome");
 const body = new goatee.Body();
 body.add(new goatee.Text("Welcome to the test application."));
+
+body.add(new goatee.Text("Open the console to see the log."));
+const inlineScript = new goatee.Script({
+  content: "console.log('Hello from inline Goatee script');"
+});
+body.add(inlineScript);
+
+body.add(new goatee.Text("Click the link below to check out the administration page."));
 body.add(new goatee.Link("Administration", "./admin.html"));
 
+body.add(new goatee.Text("Below is a sample user data table."));
+const table = new goatee.Table({
+  headers: ["Key",
+    "Value"],
+  rows: [
+    ["Username",
+      "CodeGoat"],
+    ["Email",
+      "goat@web.dev"],
+    ["Role",
+      "Lead Architect"],
+    ["Access Level",
+      "Infinite"]
+  ]
+});
+body.add(table);
+
+body.add(new goatee.Text("Below is a sample contact form."));
+const form = new goatee.Form({ method: "post", action: "/api/contact" });
+form.add(new goatee.Input({ name: "name", label: "Your Name" }));
+form.add(new goatee.Input({ name: "email", type: "email", label: "Your Email" }));
+form.add(new goatee.Textarea({ name: "message", label: "Your Message" }));
+form.add(new goatee.Button("Send Message"));
+body.add(form);
+
 export default new goatee.Page(head, body);
+```
+
+## More Information
+
+Additional features are planned, including enhancements to existing classes.
