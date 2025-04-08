@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.8] - 2025-04-08
 
+### Fixed
+
+- Fixed various issues in the example application.
+
+## [0.1.8] - 2025-04-08
+
 ### Added
 
 - Adds support for the "<select>" and "<option>" tags using the "Goatee.Select()" and "Goatee.Option()" classes.
