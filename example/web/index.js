@@ -13,7 +13,7 @@ const inlineScript = new goatee.Script({
 });
 body.add(inlineScript);
 
-body.add(new goatee.Text("Click below to test the alert.");
+body.add(new goatee.Text("Click below to test the alert."));
 body.add(new goatee.Link("Click me", "#", "alert('Link clicked!')"));
 
 body.add(new goatee.Text("Click the link below to check out the administration page."));
