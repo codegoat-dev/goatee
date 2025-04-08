@@ -9,7 +9,7 @@
 ## 🚀 Features
 
 - 📦 Generate static HTML pages using pure JavaScript
-- 🧱 Class-based components: `Page`, `Head`, `Body`, `Text`, `Link`, `Form`, `Input`, `Textarea`, `Button`, `Table`, `Script`, and more
+- 🧱 Class-based components: `Page`, `Head`, `Body`, `Image`, `Heading`, `Separator`, `Text`, `Link`, `Form`, `Input`, `Textarea`, `Select`, `Option`, `Button`, `Table`, `Script`, `RawHtml`, and more
 
 - 🧑‍🦯 Accessibility-first: input elements support proper `<label for="...">` relationships
 - 🧹 Outputs clean, semantic HTML that can be dropped into any static web host
@@ -22,7 +22,23 @@
 To install the package, run the following command:
 
 ```bash
-npm install @CodeGoat-dev/goatee
+npm install @codegoatx/goatee
+
+To install the package globally, run the following command:
+
+```bash
+npm -g install @codegoatx/goatee
+
+---
+
+## 🚀 Goatee CLI
+
+You can use Goatee via the command line. Make sure you install Goatee globally before attempting to use the Goatee CLI.
+
+To build a Goatee project via the CLI, run the following command:
+
+```bash
+goatee "path/to/source/directory" "/path/to/build/directory"
 
 ---
 
