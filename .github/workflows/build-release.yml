@@ -141,7 +141,7 @@ jobs:
           mv package.tmp.json package.json
 
       - name: Publish to npmjs
-        run: npm publish --access public
+        run: npm publish --registry https://registry.npmjs.org --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
