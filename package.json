@@ -32,13 +32,13 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.2.0",
-    "@eslint/js": "^9.18.0",
-    "eslint": "^9.18.0",
-    "eslint-plugin-jsonc": "^2.18.2",
-    "eslint-plugin-n": "^17.15.1",
-    "globals": "^15.14.0",
-    "typescript": "^5.3.3"
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.24.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-jsonc": "^2.20.0",
+    "eslint-plugin-n": "^17.17.0",
+    "globals": "^16.0.0",
+    "typescript": "^5.8.3"
   },
   "engines": {
     "node": ">=20.12.2",
