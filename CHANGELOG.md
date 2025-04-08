@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- The Goatee CLI utility now correctly resolves it's own package metadata.
+
+## [0.2.1] - 2025-04-08
+
+### Fixed
+
 - Fixes an issue with the CLI utility not locating the package metadata.
 
 ## [0.2.0] - 2025-04-08

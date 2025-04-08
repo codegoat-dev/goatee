@@ -23,7 +23,7 @@
     "url": "https://github.com/codegoat-dev/goatee/issues"
   },
   "bin": {
-    "goatee": "./src/goatee-cli.js"
+    "goatee": "./goatee-cli.js"
   },
   "scripts": {
     "lint:check": "eslint .",
