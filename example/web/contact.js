@@ -1,4 +1,4 @@
-import { Goatee } from "../src/Goatee.js";
+import { Goatee } from "@codegoatx/goatee";
 
 const goatee = new Goatee();
 
