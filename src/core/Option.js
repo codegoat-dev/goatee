@@ -13,7 +13,7 @@ export class Option extends Element {
   }
 
   render() {
-    const selectedAttr = this.selected ? ' selected' : '';
+    const selectedAttr = this.selected ? " selected" : "";
     return `<option value="${this.value}"${selectedAttr}>${this.label}</option>`;
   }
 }

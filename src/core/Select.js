@@ -20,8 +20,9 @@ export class Select extends Element {
   }
 
   render() {
-    const labelTag = this.label ? `<label for="${this.id}">${this.label}</label>\n` : '';
-    const optionsHtml = this.options.map(o => o.render()).join('\n');
+    const labelTag = this.label ? `<label for="${this.id}">${this.label}</label>\n` : "";
+    const optionsHtml = this.options.map(o => o.render())
+      .join("\n");
     return `${labelTag}<select id="${this.id}" name="${this.name}">\n${optionsHtml}\n</select>`;
   }
 }
