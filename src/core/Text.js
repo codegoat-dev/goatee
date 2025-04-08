@@ -12,8 +12,8 @@ export class Text extends Element {
     bold = false,
     italic = false,
     underline = false,
-    className = '',
-    style = ''
+    className = "",
+    style = ""
   } = {}) {
     super();
     this.body = body;
@@ -31,8 +31,8 @@ export class Text extends Element {
     if (this.italic)    content = `<i>${content}</i>`;
     if (this.bold)      content = `<b>${content}</b>`;
 
-    const classAttr = this.className ? ` class="${this.className}"` : '';
-    const styleAttr = this.style ? ` style="${this.style}"` : '';
+    const classAttr = this.className ? ` class="${this.className}"` : "";
+    const styleAttr = this.style ? ` style="${this.style}"` : "";
 
     return `<p${classAttr}${styleAttr}>${content}</p>`;
   }
