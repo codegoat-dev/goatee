@@ -8,7 +8,7 @@ import { fileURLToPath } from "url";
 // Resolve the package version dynamically
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const packageJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, "package.json"), "utf-8"));
+const packageJson = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), "package.json"), "utf-8"));
 
 // CLI arguments
 const args = process.argv.slice(2);
