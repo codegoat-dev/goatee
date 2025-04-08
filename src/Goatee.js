@@ -21,6 +21,8 @@ import { OrderedList } from "./core/OrderedList.js";
 import { Form } from "./core/Form.js";
 import { Input } from "./core/Input.js";
 import { Textarea } from "./core/Textarea.js";
+import { Select} from "./core/Select.js";
+import { Option } from "./core/Option.js";
 import { Button } from "./core/Button.js";
 import { RawHtml } from "./core/RawHtml.js";
 
@@ -42,6 +44,8 @@ export class Goatee {
     this.Form = Form;
     this.Input = Input;
     this.Textarea = Textarea;
+    this.Select = Select;
+    this.Option = Option;
     this.Button = Button;
     this.RawHtml = RawHtml;
   }
