@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changes
 
 - Adds support for bold, italic, underlined and justified text. The "Goatee.Text()" class now includes switches for the new styles.
+- Adds support for the "onclick" property in links. The "Goatee.Link()" class now includes an "onclick" property.
 
 ## [0.1.6] - 2025-04-07
 
