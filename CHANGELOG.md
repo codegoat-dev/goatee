@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Adds support for the "<img>" tag using the "Goatee.Image()" class.
 
+### Changes
+
+- Refactors the Goatee CLI utility to improve error handling and source resolution.
+
 ## [0.2.3] - 2025-04-08
 
 ### Fixed

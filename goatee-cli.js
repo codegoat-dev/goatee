@@ -39,8 +39,8 @@ if (flag === "--version") {
 }
 
 // Set up build directories
-const sourceDir = args[0] || "./web";
-const buildDir = args[1] || "./build";
+const sourceDir = args[0] || path.resolve(process.cwd(), "web");
+const buildDir = args[1] || path.resolve(process.cwd(), "build");
 
 console.log("📦 Attempting to build Goatee site...");
 
@@ -49,11 +49,20 @@ if (!fs.existsSync(sourceDir)) {
   process.exit(1);
 }
 
+try {
+  require.resolve("@codegoatx/goatee");
+} catch {
+  console.error("❌ You must install @codegoatx/goatee in your project to use this CLI.");
+  process.exit(1);
+}
+
 console.log(`🚀 Building Goatee site to: ${buildDir}`);
 
 try {
   await Goatee.buildFromDirectory(sourceDir, buildDir, true);
-  console.log("✅ Build completed successfully.");
+  console.log(`✅ Goatee build complete.
+   - Source: ${sourceDir}
+   - Output: ${buildDir}`);
 } catch (err) {
   console.error("❌ Build failed:", err.message);
   process.exit(1);
