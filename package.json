@@ -1,6 +1,6 @@
 {
   "name": "@CodeGoat-dev/goatee",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "a code-only, logic-driven web framework that lets you build static HTML websites using pure JavaScript. No templates, no magic—just structured layout through class-based elements and straightforward rendering.",
   "author": "CodeGoat-dev <codegoat@goatbot.org>",
   "type": "module",
@@ -32,13 +32,13 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.2.0",
-    "@eslint/js": "^9.18.0",
-    "eslint": "^9.18.0",
-    "eslint-plugin-jsonc": "^2.18.2",
-    "eslint-plugin-n": "^17.15.1",
-    "globals": "^15.14.0",
-    "typescript": "^5.3.3"
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.24.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-jsonc": "^2.20.0",
+    "eslint-plugin-n": "^17.17.0",
+    "globals": "^16.0.0",
+    "typescript": "^5.8.3"
   },
   "engines": {
     "node": ">=20.12.2",

@@ -39,14 +39,20 @@ const head = new goatee.Head("Welcome");
 const body = new goatee.Body();
 body.add(new goatee.Text("Welcome to the test application."));
 
+body.add(new goatee.Separator());
+
 body.add(new goatee.Text("Open the console to see the log."));
 const inlineScript = new goatee.Script({
   content: "console.log('Hello from inline Goatee script');"
 });
 body.add(inlineScript);
 
+body.add(new goatee.Separator());
+
 body.add(new goatee.Text("Click the link below to check out the administration page."));
 body.add(new goatee.Link("Administration", "./admin.html"));
+
+body.add(new goatee.Separator());
 
 body.add(new goatee.Text("Below is a sample user data table."));
 const table = new goatee.Table({
@@ -64,6 +70,8 @@ const table = new goatee.Table({
   ]
 });
 body.add(table);
+
+body.add(new goatee.Separator());
 
 body.add(new goatee.Text("Below is a sample contact form."));
 const form = new goatee.Form({ method: "post", action: "/api/contact" });
