@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodeGoat-dev/goatee.git"
+    "url": "git+https://github.com/codegoat-dev/goatee.git"
   },
   "bugs": {
-    "url": "https://github.com/CodeGoat-dev/goatee/issues"
+    "url": "https://github.com/codegoat-dev/goatee/issues"
   },
   "scripts": {
     "lint:check": "eslint .",
