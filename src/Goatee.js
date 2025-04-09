@@ -41,6 +41,7 @@ import { RawHtml } from "./core/RawHtml.js";
 // Goatee class
 export class Goatee {
   constructor () {
+    this.Types = Types;
     this.Element = Element;
     this.Page = Page;
     this.Script = Script;
