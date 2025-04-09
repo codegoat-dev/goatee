@@ -6,7 +6,9 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath, pathToFileURL } from "url";
 
-import { Types } from './Types.js';
+import pkg from "../package.json";
+
+import { Types } from "./Types.js";
 
 import { Element } from "./core/Element.js";
 import { Page } from "./core/Page.js";
@@ -64,28 +66,44 @@ export class Goatee {
 
     fs.mkdirSync(outputDir, { recursive: true });
 
-    const files = fs.readdirSync(sourceDir)
-      .filter(f => f.endsWith(".js"));
+    async function walkAndBuild(dir) {
+      const entries = fs.readdirSync(dir, { withFileTypes: true });
 
-    for (const file of files) {
-      const fullPath = path.resolve(sourceDir, file);
-      const fileUrl = pathToFileURL(fullPath).href;
+      for (const entry of entries) {
+        const fullPath = path.join(dir, entry.name);
+        const relPath = path.relative(sourceDir, fullPath);
+        const outputPath = path.join(outputDir, path.dirname(relPath));
 
-      const module = await import(fileUrl);
-      const page = module.default;
+        if (entry.isDirectory()) {
+          await walkAndBuild(fullPath);
+          continue;
+        }
 
-      if (!page || typeof page.render !== "function") {
-        console.warn(`⚠️ Skipping ${file} — no valid Page instance exported as default.`);
-        continue;
+        if (!entry.name.endsWith(".js")) continue;
+
+        const fileUrl = pathToFileURL(path.resolve(fullPath)).href;
+        const module = await import(fileUrl);
+        const page = module.default;
+
+        if (!page || typeof page.render !== "function") {
+          console.warn(`⚠️ Skipping ${relPath} — no valid Page instance exported as default.`);
+          continue;
+        }
+
+        fs.mkdirSync(outputPath, { recursive: true });
+        const outputFile = path.join(outputPath, path.basename(entry.name, ".js") + ".html");
+
+        fs.writeFileSync(outputFile, page.render(), "utf-8");
+        console.log(`✅ Built: ${outputFile}`);
       }
-
-      const baseName = path.basename(file, path.extname(file));
-      const outputFile = path.join(outputDir, `${baseName}.html`);
-
-      fs.writeFileSync(outputFile, page.render(), "utf-8");
-      console.log(`✅ Built: ${outputFile}`);
     }
 
+    await walkAndBuild(sourceDir);
     console.log(`✅ Build complete. Output in ${outputDir}`);
+  }
+
+  // Module version
+  static version() {
+    return pkg.version;
   }
 }

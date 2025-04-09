@@ -5,11 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.2.7] - 2025-04-09
+## [0.3.0] - 2025-04-09
 
 ### Added
 
 - Adds a `Goatee.Types()` class for clarity. Types can be used to specify element types for example in `<input>` elements.
+
+### Changes
+
+- Recursive building is now supported. Your projects can now include nested directories.
 
 ## [0.2.6] - 2025-04-09
 
