@@ -24,4 +24,8 @@ const table = new goatee.Table({
 
 body.add(table);
 
+const footer = new goatee.Footer("site-footer");
+footer.add(new goatee.Text("© 2025 Goat Technologies"));
+body.add(footer);
+
 export default new goatee.Page(head, body);

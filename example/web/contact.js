@@ -24,4 +24,8 @@ form.add(new goatee.Button({ text: "Reset", type: goatee.Types.RESET }));
 
 body.add(form);
 
+const footer = new goatee.Footer("site-footer");
+footer.add(new goatee.Text("© 2025 Goat Technologies"));
+body.add(footer);
+
 export default new goatee.Page(head, body);

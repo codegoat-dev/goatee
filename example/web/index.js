@@ -25,4 +25,8 @@ body.add(new goatee.Link("Contact Us", "./contact.html"));
 body.add(new goatee.Text("Click below to test the table."));
 body.add(new goatee.Link("Test Table", "./table.html"));
 
+const footer = new goatee.Footer("site-footer");
+footer.add(new goatee.Text("© 2025 Goat Technologies"));
+body.add(footer);
+
 export default new goatee.Page(head, body);
