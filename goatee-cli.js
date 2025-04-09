@@ -49,13 +49,6 @@ if (!fs.existsSync(sourceDir)) {
   process.exit(1);
 }
 
-try {
-  require.resolve("@codegoatx/goatee");
-} catch {
-  console.error("❌ You must install @codegoatx/goatee in your project to use this CLI.");
-  process.exit(1);
-}
-
 console.log(`🚀 Building Goatee site to: ${buildDir}`);
 
 try {
