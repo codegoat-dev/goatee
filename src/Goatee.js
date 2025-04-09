@@ -6,7 +6,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath, pathToFileURL } from "url";
 
-import pkg from "../package.json";
+import pkg from "../package.json" with { type: "json" };
 
 import { Types } from "./Types.js";
 
