@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adds support for the "<main>" element using the "Goatee.Main()" class.
 - Adds support for the "<header>" element using the "Goatee.Header()" class.
 - Adds support for the "<footer>" element using the "Goatee.Footer()" class.
+- Adds support for the "<label>" element using the "Goatee.Label()" class.
 
 ### Changes
 

@@ -30,6 +30,7 @@ import { Table } from "./core/Table.js";
 import { UnorderedList } from "./core/UnorderedList.js";
 import { OrderedList } from "./core/OrderedList.js";
 import { Form } from "./core/Form.js";
+import { Label } from "./core/Label.js";
 import { Input } from "./core/Input.js";
 import { Textarea } from "./core/Textarea.js";
 import { Select } from "./core/Select.js";
@@ -57,6 +58,7 @@ export class Goatee {
     this.UnorderedList = UnorderedList;
     this.OrderedList = OrderedList;
     this.Form = Form;
+    this.Label = Label;
     this.Input = Input;
     this.Textarea = Textarea;
     this.Select = Select;
