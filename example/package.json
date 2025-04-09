@@ -19,6 +19,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@codegoatx/goatee": "^0.3.0"
+    "@codegoatx/goatee": "^0.3.2"
   }
 }
