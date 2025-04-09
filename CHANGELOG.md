@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adds a `Goatee.Types()` class for clarity. Types can be used to specify element types for example in `<input>` elements.
 - Adds support for the "<div"> element using the "Goatee.Container()" class.
 - Adds support for the "<section>" element using the "Goatee.Section()" class.
+- Adds support for the "<main>" element using the "Goatee.Main()" class.
+- Adds support for the "<footer>" element using the "Goatee.Footer()" class.
 
 ### Changes
 
