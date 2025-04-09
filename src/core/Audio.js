@@ -24,10 +24,10 @@ export class Audio extends Element {
 
   render() {
     let attrs = `preload="${this.preload}"`;
-    if (this.controls) attrs += ` controls`;
-    if (this.autoplay) attrs += ` autoplay`;
-    if (this.loop) attrs += ` loop`;
-    if (this.muted) attrs += ` muted`;
+    if (this.controls) attrs += " controls";
+    if (this.autoplay) attrs += " autoplay";
+    if (this.loop) attrs += " loop";
+    if (this.muted) attrs += " muted";
 
     if (this.sources && Array.isArray(this.sources)) {
       const sourceTags = this.sources
