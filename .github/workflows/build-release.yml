@@ -32,6 +32,11 @@ jobs:
             git add .
             git commit -m "CI: Lint code" -m "Lints code."
             git push origin main
+            echo "🔄 Merging main into dev..."
+            git fetch origin
+            git checkout dev
+            git merge origin/main --no-edit
+            git push origin dev
           else
             echo "No lint fixes to commit."
           fi
