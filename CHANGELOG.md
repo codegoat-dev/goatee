@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Fixes an issue where the "Goatee.Main()", "Goatee.Header()" and "Goatee.Footer()" classes were not exported.
+
+## [0.3.1] - 2025-04-09
+
+### Fixed
+
 - Fixes an import error in the "Goatee()" class.
 
 ## [0.3.0] - 2025-04-09

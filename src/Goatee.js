@@ -50,6 +50,9 @@ export class Goatee {
     this.Section = Section;
     this.Image = Image;
     this.Audio = Audio;
+    this.Main = Main;
+    this.Header = Header;
+    this.Footer = Footer;
     this.Heading = Heading;
     this.Separator = Separator;
     this.Text = Text;
