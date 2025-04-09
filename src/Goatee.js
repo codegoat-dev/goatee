@@ -20,6 +20,7 @@ import { Section } from './core/Section.js';
 import { Image } from "./core/Image.js";
 import { Audio } from "./core/Audio.js";
 import { Main } from "./core/Main.js";
+import { Header } from "./core/Header.js";
 import { Footer } from "./core/Footer.js";
 import { Heading } from "./core/Heading.js";
 import { Separator } from "./core/Separator.js";
