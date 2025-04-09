@@ -1,6 +1,6 @@
 {
   "name": "@CodeGoat-dev/goatee",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "a code-only, logic-driven web framework that lets you build static HTML websites using pure JavaScript. No templates, no magic—just structured layout through class-based elements and straightforward rendering.",
   "author": "CodeGoat-dev <codegoat@goatbot.org>",
   "type": "module",
