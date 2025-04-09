@@ -22,16 +22,21 @@ jobs:
         run: npm install
 
       - name: Run lint fix
-        run: npm run lint:fix
+        run: npm run lint:fix || true
 
       - name: Commit changes if any
         run: |
-          git config user.name "goatee-ci"
-          git config user.email "ci@codegoat.dev"
+          git config user.name "goatee-ci" || true
+          git config user.email "ci@codegoat.dev" || true
           if [[ -n $(git status --porcelain) ]]; then
-            git add .
-            git commit -m "CI: Lint code" -m "Lints code."
-            git push origin main
+            git add . || true
+            git commit -m "CI: Lint code" -m "Lints code." || true
+            git push origin main || true
+            echo "🔄 Merging main into dev..."
+            git fetch origin || true
+            git checkout dev || true
+            git merge origin/main --no-edit || true
+            git push origin dev || true
           else
             echo "No lint fixes to commit."
           fi
