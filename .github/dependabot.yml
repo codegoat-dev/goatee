@@ -3,10 +3,11 @@ updates:
   - package-ecosystem: npm
     directory: '/'
     schedule:
-      interval: monthly
+      interval: weekly
     target-branch: 'dev'
+
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
       # Check for updates to GitHub Actions every month
-      interval: monthly
+      interval: weekly
