@@ -13,6 +13,7 @@ export class Footer extends Element {
 
   render() {
     const classAttr = this.className ? ` class="${this.className}"` : "";
-    return `<footer${classAttr}>\n${this.children.map(c => c.render()).join('\n')}\n</footer>`;
+    return `<footer${classAttr}>\n${this.children.map(c => c.render())
+      .join("\n")}\n</footer>`;
   }
 }

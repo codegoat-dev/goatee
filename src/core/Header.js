@@ -13,6 +13,7 @@ export class Header extends Element {
 
   render() {
     const classAttr = this.className ? ` class="${this.className}"` : "";
-    return `<header${classAttr}>\n${this.children.map(c => c.render()).join('\n')}\n</header>`;
+    return `<header${classAttr}>\n${this.children.map(c => c.render())
+      .join("\n")}\n</header>`;
   }
 }

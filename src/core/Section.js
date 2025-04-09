@@ -13,6 +13,7 @@ export class Section extends Element {
 
   render() {
     const classAttr = this.className ? ` class="${this.className}"` : "";
-    return `<section${classAttr}>\n${this.children.map(c => c.render()).join('\n')}\n</section>`;
+    return `<section${classAttr}>\n${this.children.map(c => c.render())
+      .join("\n")}\n</section>`;
   }
 }

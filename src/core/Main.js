@@ -13,6 +13,7 @@ export class Main extends Element {
 
   render() {
     const classAttr = this.className ? ` class="${this.className}"` : "";
-    return `<main${classAttr}>\n${this.children.map(c => c.render()).join('\n')}\n</main>`;
+    return `<main${classAttr}>\n${this.children.map(c => c.render())
+      .join("\n")}\n</main>`;
   }
 }

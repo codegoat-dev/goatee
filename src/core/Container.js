@@ -13,6 +13,7 @@ export class Container extends Element {
 
   render() {
     const classAttr = this.className ? ` class="${this.className}"` : "";
-    return `<div${classAttr}>\n${this.children.map(c => c.render()).join('\n')}\n</div>`;
+    return `<div${classAttr}>\n${this.children.map(c => c.render())
+      .join("\n")}\n</div>`;
   }
 }
