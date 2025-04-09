@@ -8,8 +8,8 @@
 
 ## 🚀 Features
 
-- 📦 Generate static HTML pages using pure JavaScript
-- 🧱 Class-based components: `Page`, `Head`, `Body`, `Image`, `Heading`, `Separator`, `Text`, `Link`, `Form`, `Input`, `Textarea`, `Select`, `Option`, `Button`, `Table`, `Script`, `RawHtml`, and more
+- 📦 Generate static HTML pages using pure JavaScript with nested directory structures
+- 🧱 Class-based components: `Page`, `Head`, `Body`, `Image`, `Audio`, `Heading`, `Separator`, `Text`, `Link`, `Form`, `Input`, `Textarea`, `Select`, `Option`, `Button`, `Table`, `Script`, `RawHtml`, and more
 
 - 🧑‍🦯 Accessibility-first: input elements support proper `<label for="...">` relationships
 - 🧹 Outputs clean, semantic HTML that can be dropped into any static web host
