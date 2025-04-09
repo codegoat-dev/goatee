@@ -19,6 +19,8 @@ import { Container } from './core/Container.js';
 import { Section } from './core/Section.js';
 import { Image } from "./core/Image.js";
 import { Audio } from "./core/Audio.js";
+import { Main } from "./core/Main.js";
+import { Footer } from "./core/Footer.js";
 import { Heading } from "./core/Heading.js";
 import { Separator } from "./core/Separator.js";
 import { Text } from "./core/Text.js";
