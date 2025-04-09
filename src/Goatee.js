@@ -6,6 +6,8 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath, pathToFileURL } from "url";
 
+import { Types } from './Types.js';
+
 import { Element } from "./core/Element.js";
 import { Page } from "./core/Page.js";
 import { Script } from "./core/Script.js";
