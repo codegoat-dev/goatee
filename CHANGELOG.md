@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Fixes the package author information.
+
+## [0.3.3] - 2025-04-09
+
+### Fixed
+
 - Fixes an issue where the "Types" class was not exported.
 
 ## [0.3.2] - 2025-04-09
