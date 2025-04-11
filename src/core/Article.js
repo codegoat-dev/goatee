@@ -1,12 +1,11 @@
 import { Element } from "./Element.js";
 
 export class Article extends Element {
-  children = [];
-
-  constructor(...children) {
+  constructor() {
     super();
-    this.children = children;
   }
+
+  children = [];
 
   add(child) {
     this.children.push(child);
