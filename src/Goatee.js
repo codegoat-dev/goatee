@@ -25,6 +25,8 @@ import { Footer } from "./core/Footer.js";
 import { Heading } from "./core/Heading.js";
 import { Separator } from "./core/Separator.js";
 import { Text } from "./core/Text.js";
+import { Blockquote } from "./core/Blockquote.js";
+import { Code } from "./core/Code.js";
 import { Link } from "./core/Link.js";
 import { Table } from "./core/Table.js";
 import { UnorderedList } from "./core/UnorderedList.js";
@@ -57,6 +59,8 @@ export class Goatee {
     this.Heading = Heading;
     this.Separator = Separator;
     this.Text = Text;
+    this.Blockquote = Blockquote;
+    this.Code = Code;
     this.Link = Link;
     this.Table = Table;
     this.UnorderedList = UnorderedList;
