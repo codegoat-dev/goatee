@@ -29,6 +29,7 @@
     "goatee": "./goatee-cli.js"
   },
   "scripts": {
+    "test": "vitest run --dir ./tests",
     "lint:check": "eslint .",
     "lint:fix": "eslint --fix .",
     "build": "tsc",
@@ -44,7 +45,8 @@
     "eslint-plugin-jsonc": "^2.20.0",
     "eslint-plugin-n": "^17.17.0",
     "globals": "^16.0.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
   },
   "engines": {
     "node": ">=20.12.2",
