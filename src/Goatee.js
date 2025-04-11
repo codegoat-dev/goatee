@@ -79,14 +79,14 @@ export class Goatee {
 
     fs.mkdirSync(outputDir, { recursive: true });
 
-    const ignorePath = path.join(path.resolve(sourceDir, '..'), '.goateeignore');
+    const ignorePath = path.join(path.resolve(sourceDir, ".."), ".goateeignore");
     const ignored = new Set();
 
     if (fs.existsSync(ignorePath)) {
-      const lines = fs.readFileSync(ignorePath, 'utf-8')
-        .split('\n')
+      const lines = fs.readFileSync(ignorePath, "utf-8")
+        .split("\n")
         .map(line => line.trim())
-        .filter(line => line && !line.startsWith('#'));
+        .filter(line => line && !line.startsWith("#"));
 
       for (const line of lines) {
         const ignoreEntry = path.resolve(sourceDir, line);
@@ -111,20 +111,20 @@ export class Goatee {
           continue;
         }
 
-        if (!entry.name.endsWith('.js')) continue;
+        if (!entry.name.endsWith(".js")) continue;
 
         const fileUrl = pathToFileURL(fullPath).href;
         const module = await import(fileUrl);
         const page = module.default;
 
-        if (!page || typeof page.render !== 'function') {
+        if (!page || typeof page.render !== "function") {
           console.warn(`⚠️ Skipping ${relPath} — no valid Page instance exported as default.`);
           continue;
         }
 
         fs.mkdirSync(outputPath, { recursive: true });
-        const outputFile = path.join(outputPath, path.basename(entry.name, '.js') + '.html');
-        fs.writeFileSync(outputFile, page.render(), 'utf-8');
+        const outputFile = path.join(outputPath, path.basename(entry.name, ".js") + ".html");
+        fs.writeFileSync(outputFile, page.render(), "utf-8");
         console.log(`✅ Built: ${outputFile}`);
       }
     }
