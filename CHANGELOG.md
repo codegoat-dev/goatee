@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adds support for the "<br>" element using the "Goatee.Break()" class.
 - Adds support for the "<article>" element using the "Goatee.Article()" class.
 - Adds support for the "<video>" element using the "Goatee.Video()" class.
+- Adds unit tests for all element classes.
 
 ## [0.3.6] - 2025-04-11
 
