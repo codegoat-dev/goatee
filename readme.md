@@ -10,7 +10,7 @@
 
 - 📦 Generate static HTML pages using pure JavaScript with nested directory structures
 - ❌ Specify files and directories to ignore using `.goateeignore` files
-- 🧱 Class-based components: `Page`, `Head`, `Body`, `Container`, `Section`, `Image`, `Audio`, `Main`, `Header`, `Footer`, `Heading`, `Separator`, `Text`, `Blockquote`, `Code`, `Link`, `Form`, `Label`, `Input`, `Textarea`, `Select`, `Option`, `Button`, `Table`, `Script`, `RawHtml`, and more
+- 🧱 Class-based components: `Page`, `Head`, `Body`, `Container`, `Section`, `Image`, `Audio`, `Video`, `Main`, `Header`, `Footer`, `Heading`, `Separator`, `Break`, `Text`, `Article`, `Blockquote`, `Code`, `Link`, `Form`, `Label`, `Input`, `Textarea`, `Select`, `Option`, `Button`, `Table`, `Script`, `RawHtml`, and more
 
 - 🧑‍🦯 Accessibility-first: input elements support proper `<label for="...">` relationships
 - 🧹 Outputs clean, semantic HTML that can be dropped into any static web host
