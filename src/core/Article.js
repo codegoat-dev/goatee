@@ -12,6 +12,7 @@ export class Article extends Element {
   }
 
   render() {
-    return `<article>\n${this.children.map(c => c.render()).join("\n")}\n</article>`;
+    return `<article>\n${this.children.map(c => c.render())
+      .join("\n")}\n</article>`;
   }
 }

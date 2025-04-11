@@ -25,7 +25,7 @@ import { Header } from "./core/Header.js";
 import { Footer } from "./core/Footer.js";
 import { Heading } from "./core/Heading.js";
 import { Separator } from "./core/Separator.js";
-inport { Break } from "./core/Break.js";
+import { Break } from "./core/Break.js";
 import { Text } from "./core/Text.js";
 import { Article } from "./core/Article.js";
 import { Blockquote } from "./core/Blockquote.js";

@@ -22,10 +22,10 @@ export class Video extends Element {
 
   render() {
     let attributes = `src="${this.src}"`;
-    if (this.controls) attributes += ` controls`;
-    if (this.autoplay) attributes += ` autoplay`;
-    if (this.loop) attributes += ` loop`;
-    if (this.muted) attributes += ` muted`;
+    if (this.controls) attributes += " controls";
+    if (this.autoplay) attributes += " autoplay";
+    if (this.loop) attributes += " loop";
+    if (this.muted) attributes += " muted";
     if (this.width) attributes += ` width="${this.width}"`;
     if (this.height) attributes += ` height="${this.height}"`;
 
