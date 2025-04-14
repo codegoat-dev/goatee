@@ -30,20 +30,25 @@ export class Table extends Element {
 
   render() {
     const thead = this.headers.length
-      ? `<thead><tr>${this.headers.map(h => `<th>${h}</th>`).join("")}</tr></thead>`
+      ? `<thead><tr>${this.headers.map(h => `<th>${h}</th>`)
+        .join("")}</tr></thead>`
       : "";
 
     const tbody = `<tbody>
 ${this.rows.map(row =>
-  `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}</tr>`
-).join("\n")}
+    `<tr>${row.map(cell => `<td>${cell}</td>`)
+      .join("")}</tr>`
+  )
+    .join("\n")}
 </tbody>`;
 
     const tfoot = this.footer.length
       ? `<tfoot>
 ${this.footer.map(row =>
-  `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}</tr>`
-).join("\n")}
+    `<tr>${row.map(cell => `<td>${cell}</td>`)
+      .join("")}</tr>`
+  )
+    .join("\n")}
 </tfoot>`
       : "";
 
