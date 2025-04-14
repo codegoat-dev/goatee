@@ -29,6 +29,7 @@ Options:
 Examples:
   goatee               Build ./web to ./build
   goatee src dist      Build ./src to ./dist
+  goatee src dist --clean      Build ./src to ./dist cleanly
 `);
   process.exit(0);
 }
