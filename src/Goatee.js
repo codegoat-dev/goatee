@@ -30,6 +30,8 @@ import { Text } from "./core/Text.js";
 import { Article } from "./core/Article.js";
 import { Blockquote } from "./core/Blockquote.js";
 import { Code } from "./core/Code.js";
+import { Preformatted } from "./core/Preformatted.js";
+import { Nav } from "./core/Nav.js";
 import { Link } from "./core/Link.js";
 import { Table } from "./core/Table.js";
 import { UnorderedList } from "./core/UnorderedList.js";
@@ -65,6 +67,8 @@ export class Goatee {
     this.Text = Text;
     this.Blockquote = Blockquote;
     this.Code = Code;
+    this.Preformatted = Preformatted;
+    this.Nav = Nav;
     this.Link = Link;
     this.Table = Table;
     this.UnorderedList = UnorderedList;
