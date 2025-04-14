@@ -20,7 +20,7 @@ Goatee CLI
 -----------
 
 Usage:
-  goatee [sourceDir] [buildDir]
+  goatee [sourceDir] [buildDir] [--clean]
 
 Options:
   --help         Show this help message
@@ -38,9 +38,10 @@ if (flag === "--version") {
   process.exit(0);
 }
 
-// Set up build directories
+// Set up build parameters
 const sourceDir = args[0] || path.resolve(process.cwd(), "web");
 const buildDir = args[1] || path.resolve(process.cwd(), "build");
+const cleanBuild = args.includes("--clean");
 
 console.log("📦 Attempting to build Goatee site...");
 
@@ -52,7 +53,7 @@ if (!fs.existsSync(sourceDir)) {
 console.log(`🚀 Building Goatee site to: ${buildDir}`);
 
 try {
-  await Goatee.buildFromDirectory(sourceDir, buildDir, true);
+  await Goatee.buildFromDirectory(sourceDir, buildDir, cleanBuild);
   console.log(`✅ Goatee build complete.
    - Source: ${sourceDir}
    - Output: ${buildDir}`);
