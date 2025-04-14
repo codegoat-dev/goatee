@@ -10,6 +10,14 @@ export class Table extends Element {
     this.rows = rows;
   }
 
+  addHeader(header) {
+    this.headers.push(header);
+  }
+
+  addRow(row) {
+    this.rows.push(row);
+  }
+
   render() {
     const thead = this.headers.length
       ? `<thead><tr>${this.headers.map(h => `<th>${h}</th>`)
