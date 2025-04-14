@@ -100,8 +100,8 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const version = process.env.VERSION;
-            const changelog = process.env.CHANGELOG;
+            const version = '${{ steps.get_version.outputs.version }}';
+            const changelog = `${{ steps.changelog.outputs.content }}`;
             const release = await github.rest.repos.createRelease({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -110,9 +110,6 @@ jobs:
               body: changelog,
             });
             console.log(`Created release ${release.data.html_url}`);
-          env:
-            VERSION: ${{ steps.get_version.outputs.version }}
-            CHANGELOG: ${{ steps.changelog.outputs.content }}
 
       - name: Upload package to GitHub release
         uses: actions/upload-artifact@v4
