@@ -97,11 +97,14 @@ jobs:
 
       - name: Create GitHub release
         uses: actions/github-script@v7
+        env:
+          VERSION: ${{ steps.get_version.outputs.version }}
+          CHANGELOG: ${{ steps.changelog.outputs.content }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const version = '${{ steps.get_version.outputs.version }}';
-            const changelog = `${{ steps.changelog.outputs.content }}`;
+            const version = process.env.VERSION;
+            const changelog = process.env.CHANGELOG;
             const release = await github.rest.repos.createRelease({
               owner: context.repo.owner,
               repo: context.repo.repo,
