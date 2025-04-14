@@ -1,5 +1,8 @@
 // Goatee
 // Code only web framework
+// Description:
+// A code-only, logic-driven web framework that lets you build static HTML websites using pure JavaScript.
+// No templates, no magic—just structured layout through class-based elements and straightforward rendering.
 
 // Imports
 import fs from "fs";
