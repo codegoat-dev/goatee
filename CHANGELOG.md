@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Adds support for the `<!-->` element using the `Goatee.Comment()` class.
+- Adds support for the `<meta>` element using the `Goatee.Meta()` class.
+- Adds support for the `<style>` element using the `Goatee.Style()` class.
 
 ## [0.4.2] - 2025-04-15
 
