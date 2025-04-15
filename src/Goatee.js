@@ -15,6 +15,7 @@ import { Types } from "./Types.js";
 
 import { Element } from "./core/Element.js";
 import { Page } from "./core/Page.js";
+import { Comment } from "./core/Comment.js";
 import { Script } from "./core/Script.js";
 import { Head } from "./core/Head.js";
 import { Body } from "./core/Body.js";
@@ -54,6 +55,7 @@ export class Goatee {
     this.Types = Types;
     this.Element = Element;
     this.Page = Page;
+    this.Comment = Comment;
     this.Script = Script;
     this.Head = Head;
     this.Body = Body;
