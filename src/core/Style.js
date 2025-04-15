@@ -9,7 +9,8 @@ export class Style extends Element {
 
   render() {
     const attrs = Object.entries(this.attributes)
-      .map(([key, value]) => `${key}="${value}"`)
+      .map(([key,
+        value]) => `${key}="${value}"`)
       .join(" ");
     return `<style${attrs ? " " + attrs : ""}>\n${this.content}\n</style>`;
   }
