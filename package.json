@@ -42,7 +42,7 @@
     "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^10.0.1",
     "eslint": "^10.1.0",
-    "eslint-plugin-jsonc": "^2.21.0",
+    "eslint-plugin-jsonc": "^3.1.2",
     "eslint-plugin-n": "^17.24.0",
     "globals": "^17.3.0",
     "typescript": "^5.9.3",
